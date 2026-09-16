@@ -17,11 +17,11 @@ def get_number(message):
         except ValueError:
             print("Ingrese un número válido.")
 
-def askfor_int(mesaje):
+def askfor_int(message):
     """Pide un número entero positivo para las cantidades."""
-    return int(pedir_numero(mesaje))
+    return int(get_number(message))
 
-def askfor_option_onmenu(opciones):
+def askfor_option_onmenu(options):
     """Muestra un menú numerado y valida que el usuario elija una opción válida."""
     print("Seleccione una opción:")
     for i, option in enumerate(options, start=1):

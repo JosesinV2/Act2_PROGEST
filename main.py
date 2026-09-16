@@ -44,5 +44,5 @@ def main():
     print(f"TOTAL:     C${total:.2f}")
     print("=" * 30)
 
-if __name__ == "__main__":
-    main()
+
+main()

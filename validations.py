@@ -1,16 +1,16 @@
-def pedir_texto(mensaje):
+def get_text(message):
     """Pide un texto y valida que solo contenga letras y espacios."""
     while True:
-        texto = input(mensaje).strip()
+        texto = input(message).strip()
         if texto and texto.replace(" ", "").isalpha():
             return texto
         print("Error: Ingrese un nombre válido (solo letras).")
 
-def pedir_numero(mensaje):
+def get_number(message):
     """Pide un número flotante y asegura que sea positivo."""
     while True:
         try:
-            val = float(input(mensaje))
+            val = float(input(message))
             if val > 0:
                 return val
             print("Debe ser mayor a 0.")

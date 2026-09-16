@@ -1,7 +1,7 @@
-from calcular_subtotal import calcular_subtotal
-from calcular_descuento import calcular_descuento
-from calcular_envio import calcular_envio
-from validaciones import pedir_texto, pedir_numero, pedir_entero, pedir_opcion_menu
+from calculate_subtotal import calcular_subtotal
+from calculate_discount import calcular_descuento
+from calculate_shipping import calcular_envio
+from validations import pedir_texto, pedir_numero, pedir_entero, pedir_opcion_menu
 
 def main():
     print("=== DATOS DEL CLIENTE ===")

@@ -1,4 +1,4 @@
-def calcular_descuento(subtotal, tipo_cliente):
+def cal_discount(subtotal, client_type):
     # Descuento según el monto
     if subtotal >= 1000:
         desc = 0.15
@@ -8,9 +8,9 @@ def calcular_descuento(subtotal, tipo_cliente):
         desc = 0.0
 
     # Descuento adicional por tipo de cliente
-    if tipo_cliente.lower() == "vip":
+    if client_type.lower() == "vip":
         desc += 0.10
-    elif tipo_cliente.lower() == "frecuente":
+    elif client_type.lower() == "frecuente":
         desc += 0.05
 
     return subtotal * desc

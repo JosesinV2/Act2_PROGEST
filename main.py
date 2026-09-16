@@ -1,6 +1,6 @@
-from calculate_subtotal import calcular_subtotal
-from calculate_discount import calcular_descuento
-from calculate_shipping import calcular_envio
+import calculate_subtotal
+import calculate_discount
+import calculate_shipping
 from validations import pedir_texto, pedir_numero, pedir_entero, pedir_opcion_menu
 
 def main():
@@ -23,9 +23,9 @@ def main():
     cantidad = pedir_entero("Cantidad: ")
 
     # Cálculos
-    subtotal = calcular_subtotal(precio, cantidad)
-    descuento = calcular_descuento(subtotal, tipo_cliente)
-    envio = calcular_envio(zona)
+    subtotal = calculate_subtotal.cal_subtotal(precio, cantidad)
+    descuento = calculate_discount.cal_discount(subtotal, tipo_cliente)
+    envio = calculate_shipping.shipping_fee(zona)
     total = subtotal - descuento + envio
 
     # Resumen
